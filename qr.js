@@ -1344,7 +1344,7 @@ QRBitBuffer.prototype = {
 };
 
 
-var qr=jQuery("<div id='qrcodeTable' style='position:fixed;width:300px;height:300px;top:50%;left:50%;padding:100px;margin-left:-250px;margin-top:-250px;z-index:9999;background:#fff;'></div>").appendTo($('body'));
+var qr=jQuery("<div id='qrcodeTable' style='box-sizing:content-box;position:fixed;width:256px;height:256px;top:50%;left:50%;padding:100px;margin-left:-250px;margin-top:-250px;z-index:9999;background:#fff;'></div>").appendTo($('body'));
 var mask=jQuery("<div id='qrcodeTable' style='position:fixed;width:100%;height:100%;opacity:.9;filter:alpla(opacity:90);background:#000;top:0px;left:0px;z-index:999;'></div>").appendTo($('body'));
 jQuery(mask).click(function(){
 	jQuery(qr).remove();
